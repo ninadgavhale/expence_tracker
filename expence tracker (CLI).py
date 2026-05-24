@@ -7,7 +7,6 @@ def expence_tracker():
         store.append((user_expence, description))
         
     another = input("do you want to add another expence? (yes/no) ")
-    if another.lower() != "yes":
-        break
+    
 expence_tracker()
 print(store)
