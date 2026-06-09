@@ -28,14 +28,20 @@ def view_expenses():
 
 
 def delete_expenses():
-    
-    deletation = input("expence you want to delete")
-    store.remove(deletation)
 
-
-
-
+    description_to_delete = input("enter the description of the expence you want to delete: ")
+    deletation = None
+    for expence in store:
+        if expence['description'] == description_to_delete:
+            deletation = expence
+            break
+    if deletation:
+        store.remove(deletation)
+        print("expence deleted successfully.")
+    else:
+        print("expence not found.")
 
 expence_tracker()
 view_expenses()
+delete_expenses()
 print(store)
