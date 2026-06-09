@@ -18,13 +18,22 @@ def expence_tracker():
         else:            
             print("thank you for using expence tracker")
             break
-    print(f"your total expence is {sum('ammount')}")
-
+    print(f"your total expence is {sum(expence['ammount'] for expence in store)}")
+    
 
 def view_expenses():
     print("your expences are :")
     for expence in store:
         print(f"{expence['description']} : {expence['ammount']}")
+
+
+def delete_expenses():
+    
+    deletation = input("expence you want to delete")
+    store.remove(deletation)
+
+
+
 
 
 expence_tracker()
