@@ -15,7 +15,7 @@ def expence_tracker():
         elif another == "no":             # there is no need to check for "no" because if it's not "yes" it will automatically go to the else block, but i added it for better readability
             print("thank you for using expence tracker") 
             break
-        else:            
+        else:
             print("thank you for using expence tracker")
             break
     print(f"your total expence is {sum(expense['ammount'] for expense in store)}")  # 
@@ -93,3 +93,7 @@ def main():
             break
         else:
             print("Invalid choice. Please enter a number between 1 and 5.")
+
+
+main()
+
