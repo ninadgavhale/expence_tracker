@@ -1,8 +1,3 @@
 store = []
 
-x = input = ("your values")
-print(x)
-
-def total_expence():
-    for expense in store:
-        pass
+# the file is for try and test or for practice too 
