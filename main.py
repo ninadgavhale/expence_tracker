@@ -6,6 +6,9 @@ def expense_tracker():
     while True:
         try:
             user_expense = float(input("Enter the amount you spent: "))
+            if user_expense < 0:
+                print("Amount cannot be negative. Please enter a valid number.")
+                continue
         except ValueError:
             print("Invalid input. Please enter a valid number.")
             continue
