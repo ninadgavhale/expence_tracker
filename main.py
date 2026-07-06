@@ -74,12 +74,12 @@ def main():
     while True:
         
         
-        print(". Expense Tracker Menu:")
-        print(". Add Expense")
-        print(". View Expenses")
-        print(". Delete Expense")
-        print(". Show Total Expenses")
-        print(". Exit")
+        print("Expense Tracker Menu:")
+        print("1. Add Expense")
+        print("2. View Expenses")
+        print("3. Delete Expense")
+        print("4. Show Total Expenses")
+        print("5. Exit")
 
         choice = input("Enter your choice (1-5): ")
 
